@@ -12,15 +12,29 @@ namespace BLApplication
     [ServiceContract]
     public interface IService1
     {
+        //Calculadora Financiera
+        //CF = Ci(1+r) elevado n
+        [OperationContract]
+        float InteresCompuesto(float CapitalInicial, float TasaDeInteres, float NumeroPeriodos);
+        // I = C * i * t
+        [OperationContract]
+        float InteresSimple(float Capital, float TasaDeInteres, float Tiempo);
+        // Colones / ValorDolar
+        [OperationContract]
+        float ConvertirColonesDolares(float Colones, float ValorDolar);
+        // Dolares * ValorColon
+        [OperationContract]
+        float ConvertirColaresColones(float Dolares, float ValorColones);
 
+        //Calculadora Trigonometrica
+        [OperationContract]
+        float Seno();
 
+        [OperationContract]
+        float Coseno();
 
-
-
-
-
-
-
+        [OperationContract]
+        float Tangente();
 
 
         //
