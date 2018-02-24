@@ -67,8 +67,12 @@
   <ItemGroup>
     <Compile Include="Dominio\Especificaciones\RealiceConvertirColonesDolares.cs" />
     <Compile Include="Dominio\Especificaciones\RealiceConvertirDolaresColones.cs" />
+    <Compile Include="Dominio\Especificaciones\RealiceDivisionNumeros.cs" />
     <Compile Include="Dominio\Especificaciones\RealiceInteresCompuesto.cs" />
     <Compile Include="Dominio\Especificaciones\RealiceInteresSimple.cs" />
+    <Compile Include="Dominio\Especificaciones\RealiceMultiplicacionNumeros.cs" />
+    <Compile Include="Dominio\Especificaciones\RealiceRestaNumeros.cs" />
+    <Compile Include="Dominio\Especificaciones\RealiceSumaNumeros.cs" />
     <Compile Include="Dominio\Servicios\Service1.svc.cs">
       <DependentUpon>Service1.svc</DependentUpon>
     </Compile>

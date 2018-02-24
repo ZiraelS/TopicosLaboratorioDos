@@ -12,6 +12,46 @@ namespace BLApplication
     // NOTE: In order to launch WCF Test Client for testing this service, please select Service1.svc or Service1.svc.cs at the Solution Explorer and start debugging.
     public class Service1 : IService1
     {
+
+        //Calculadora Basica
+        public float SumaNumeros(float a, float b)
+        {
+            float Suma;
+            var laEspecificacion = new Dominio.Especificaciones.RealiceSumaNumeros();
+            Suma = laEspecificacion.RealizarSumaNumeros(a, b);
+            return Suma;
+        }
+
+        public float RestaNumeros(float a, float b)
+        {
+            float Resta;
+            var laEspecificacion = new Dominio.Especificaciones.RealiceRestaNumeros();
+            Resta = laEspecificacion.RealizarRestaNumeros(a, b);
+            return Resta;
+        }
+
+        public float MultiplicacionNumeros(float a, float b)
+        {
+            float Multiplicacion;
+            var laEspecificacion = new Dominio.Especificaciones.RealiceMultiplicacionNumeros();
+            Multiplicacion = laEspecificacion.RealizarMultiplicacionNumeros(a, b);
+            return Multiplicacion;
+        }
+
+        public float DivisionNumeros(float a, float b)
+        {
+            float Division;
+            var laEspecificacion = new Dominio.Especificaciones.RealiceDivisionNumeros();
+            Division = laEspecificacion.RealizarDivisionNumeros(a, b);
+            return Division;
+        }
+
+
+        //Calculadora Trigono
+
+
+
+
         //Calculadora Financiera
         public float InteresCompuesto(float CapitalInicial, float TasaDeInteres, float NumeroPeriodos)
         {
