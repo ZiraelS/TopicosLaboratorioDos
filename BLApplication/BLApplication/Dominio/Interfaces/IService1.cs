@@ -55,7 +55,7 @@ namespace BLApplication
 
         // Dolares * ValorColon
         [OperationContract]
-        double ConvertirColaresColones(double Dolares, double ValorColones);
+        double ConvertirDolaresColones(double Dolares, double ValorColones);
 
 
         //Calculadora Trigonometrica

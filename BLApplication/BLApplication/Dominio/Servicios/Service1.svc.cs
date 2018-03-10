@@ -107,7 +107,7 @@ namespace BLApplication
             return Dolares;
         }
 
-        public double ConvertirColaresColones(double Dolares, double ValorColones)
+        public double ConvertirDolaresColones(double Dolares, double ValorColones)
         {
             double CapitalFinal;
             var laEspecificacion = new Dominio.Especificaciones.RealiceConvertirDolaresColones();
