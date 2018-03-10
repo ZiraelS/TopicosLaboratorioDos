@@ -4,9 +4,12 @@ namespace BLApplication.Dominio.Especificaciones
 {
     public class RealiceInteresSimple
     { 
-        public float RealizarInteresSimple(float Capital, float TasadeInteres, float Tiempo)
+        public double RealizarInteresSimple(double Capital, double TasadeInteres, double Tiempo)
         {
-            throw new NotImplementedException();
+            double elInteresSimple;
+            var laAccion = new Dominio.Acciones.HacerInteresSimple();
+            elInteresSimple = laAccion.CrearInteresSimple(Capital, TasadeInteres, Tiempo);
+            return elInteresSimple;
         }
     }
 }

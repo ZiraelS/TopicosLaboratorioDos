@@ -1,15 +1,15 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 
 namespace BLApplication.Dominio.Especificaciones
 {
     public class RealiceDivisionNumeros
     {
-        public float RealizarDivisionNumeros(float a, float b)
+        public double RealizarDivisionNumeros(double a, double b)
         {
-            throw new NotImplementedException();
+            double laDivisionNumeros;
+            var laAccion = new Dominio.Acciones.HacerDivisionNumeros();
+            laDivisionNumeros = laAccion.CrearDivisionNumeros(a, b);
+            return laDivisionNumeros;
         }
     }
 }

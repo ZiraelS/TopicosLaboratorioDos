@@ -65,14 +65,36 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Dominio\Acciones\HacerConvertirColonesDolares.cs" />
+    <Compile Include="Dominio\Acciones\HacerConvertirDolaresColones.cs" />
+    <Compile Include="Dominio\Acciones\HacerCoseno.cs" />
+    <Compile Include="Dominio\Acciones\HacerDivisionNumeros.cs" />
+    <Compile Include="Dominio\Acciones\HacerFactorial.cs" />
+    <Compile Include="Dominio\Acciones\HacerInteresCompuesto.cs" />
+    <Compile Include="Dominio\Acciones\HacerInteresSimple.cs" />
+    <Compile Include="Dominio\Acciones\HacerLogaritmo.cs" />
+    <Compile Include="Dominio\Acciones\HacerMultiplicacionNumeros.cs" />
+    <Compile Include="Dominio\Acciones\HacerPotencia.cs" />
+    <Compile Include="Dominio\Acciones\HacerRaizCuadrada.cs" />
+    <Compile Include="Dominio\Acciones\HacerRestaNumeros.cs" />
+    <Compile Include="Dominio\Acciones\HacerSeno.cs" />
+    <Compile Include="Dominio\Acciones\HacerSumaNumeros.cs" />
+    <Compile Include="Dominio\Acciones\HacerTangente.cs" />
     <Compile Include="Dominio\Especificaciones\RealiceConvertirColonesDolares.cs" />
     <Compile Include="Dominio\Especificaciones\RealiceConvertirDolaresColones.cs" />
+    <Compile Include="Dominio\Especificaciones\RealiceCoseno.cs" />
     <Compile Include="Dominio\Especificaciones\RealiceDivisionNumeros.cs" />
+    <Compile Include="Dominio\Especificaciones\RealiceFactorial.cs" />
     <Compile Include="Dominio\Especificaciones\RealiceInteresCompuesto.cs" />
     <Compile Include="Dominio\Especificaciones\RealiceInteresSimple.cs" />
+    <Compile Include="Dominio\Especificaciones\RealiceLogaritmo.cs" />
     <Compile Include="Dominio\Especificaciones\RealiceMultiplicacionNumeros.cs" />
+    <Compile Include="Dominio\Especificaciones\RealicePotencia.cs" />
+    <Compile Include="Dominio\Especificaciones\RealiceRaizCuadrada.cs" />
     <Compile Include="Dominio\Especificaciones\RealiceRestaNumeros.cs" />
+    <Compile Include="Dominio\Especificaciones\RealiceSeno.cs" />
     <Compile Include="Dominio\Especificaciones\RealiceSumaNumeros.cs" />
+    <Compile Include="Dominio\Especificaciones\RealiceTangente.cs" />
     <Compile Include="Dominio\Servicios\Service1.svc.cs">
       <DependentUpon>Service1.svc</DependentUpon>
     </Compile>
@@ -81,7 +103,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Dominio\Acciones\" />
     <Folder Include="Dominio\Repositorio\" />
     <Folder Include="Dominio\Validaciones\" />
   </ItemGroup>

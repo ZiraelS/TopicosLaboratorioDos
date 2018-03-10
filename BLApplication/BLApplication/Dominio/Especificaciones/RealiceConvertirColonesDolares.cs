@@ -4,9 +4,12 @@ namespace BLApplication.Dominio.Especificaciones
 {
     public class RealiceConvertirColonesDolares
     {
-        public float RealizarInteresCompuesto(float Colones, float ValorDolar)
+        public double RealizarConvertirColonesDolares(double Colones, double ValorDolar)
         {
-            throw new NotImplementedException();
+            double laConvertirColonesDolares;
+            var laAccion = new Dominio.Acciones.HacerConvertirColonesDolares();
+            laConvertirColonesDolares = laAccion.CrearConvertirColonesDolares(Colones, ValorDolar);
+            return laConvertirColonesDolares;
         }
     }
 }

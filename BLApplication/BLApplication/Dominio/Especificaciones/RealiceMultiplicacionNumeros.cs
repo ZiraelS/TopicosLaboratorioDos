@@ -1,15 +1,15 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 
 namespace BLApplication.Dominio.Especificaciones
 {
     public class RealiceMultiplicacionNumeros
     {
-        public float RealizarMultiplicacionNumeros(float a, float b)
+        public double RealizarMultiplicacionNumeros(double a, double b)
         {
-            throw new NotImplementedException();
+            double laMultiplicacionNumeros;
+            var laAccion = new Dominio.Acciones.HacerMultiplicacionNumeros();
+            laMultiplicacionNumeros = laAccion.CrearMultiplicacionNumeros(a, b);
+            return laMultiplicacionNumeros;
         }
 
     }

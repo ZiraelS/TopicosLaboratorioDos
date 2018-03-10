@@ -14,50 +14,67 @@ namespace BLApplication
     {
         //Calculadora Basica
         [OperationContract]
-        float SumaNumeros(float a, float b);
-        [OperationContract]
-        float RestaNumeros(float a, float b);
-        [OperationContract]
-        float MultiplicacionNumeros(float a, float b);
-        [OperationContract]
-        float DivisionNumeros(float a, float b);
-
-
-        //Calculadora Trigonometrica 
+        double SumaNumeros(double a, double b);
 
         [OperationContract]
-        float Potencia();
+        double RestaNumeros(double a, double b);
+
         [OperationContract]
-        float Logaritmo();
+        double MultiplicacionNumeros(double a, double b);
+
         [OperationContract]
-        float RaizCuadrada();
+        double DivisionNumeros(double a, double b);
+
+
+        //Calculadora Cientifica 
         [OperationContract]
-        float Factorial();
+        double Potencia(double Numero, double Potencia);
+
+        [OperationContract]
+        double Logaritmo(double Numero);
+
+        [OperationContract]
+        double RaizCuadrada(double Numero);
+
+        [OperationContract]
+        double Factorial(double Numero);
 
 
         //Calculadora Financiera
         //CF = Ci(1+r) elevado n
         [OperationContract]
-        float InteresCompuesto(float CapitalInicial, float TasaDeInteres, float NumeroPeriodos);
+        double InteresCompuesto(double CapitalInicial, double TasaDeInteres, double NumeroPeriodos);
+
         // I = C * i * t
         [OperationContract]
-        float InteresSimple(float Capital, float TasaDeInteres, float Tiempo);
+        double InteresSimple(double Capital, double TasaDeInteres, double Tiempo);
+
         // Colones / ValorDolar
         [OperationContract]
-        float ConvertirColonesDolares(float Colones, float ValorDolar);
+        double ConvertirColonesDolares(double Colones, double ValorDolar);
+
         // Dolares * ValorColon
         [OperationContract]
-        float ConvertirColaresColones(float Dolares, float ValorColones);
+        double ConvertirColaresColones(double Dolares, double ValorColones);
+
 
         //Calculadora Trigonometrica
         [OperationContract]
-        float Seno();
+        double Seno(double grados);
 
         [OperationContract]
-        float Coseno();
+        double Coseno(double grados);
 
         [OperationContract]
-        float Tangente();
+        double Tangente(double grados);
+
+
+
+
+
+
+
+
 
 
         //

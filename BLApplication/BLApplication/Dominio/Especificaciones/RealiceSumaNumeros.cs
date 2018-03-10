@@ -1,16 +1,16 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
+
 
 namespace BLApplication.Dominio.Especificaciones
 {
     public class RealiceSumaNumeros
     {
-
-        public float RealizarSumaNumeros(float a, float b)
+        public double RealizarSumaNumeros(double a, double b)
         {
-            throw new NotImplementedException();
+            double laSumaNumeros;
+            var laAccion = new Dominio.Acciones.HacerSumaNumeros();
+            laSumaNumeros = laAccion.CrearSumaNumeros(a, b);
+            return laSumaNumeros;
         }
     }
 }

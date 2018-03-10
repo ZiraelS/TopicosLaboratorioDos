@@ -1,15 +1,15 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 
 namespace BLApplication.Dominio.Especificaciones
 {
     public class RealiceRestaNumeros
     {
-        public float RealizarRestaNumeros(float a, float b)
+        public double RealizarRestaNumeros(double a, double b)
         {
-            throw new NotImplementedException();
+            double laRestaNumeros;
+            var laAccion = new Dominio.Acciones.HacerRestaNumeros();
+            laRestaNumeros = laAccion.CrearRestaNumeros(a, b);
+            return laRestaNumeros;
         }
 
     }
