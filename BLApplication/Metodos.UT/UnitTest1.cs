@@ -128,12 +128,14 @@ namespace Metodos.UT
         {
             // preparar el escenario
             elResultadoActual = 0.0;
-            elResultadoEsperado = 0.577350269;
+            elResultadoEsperado = 0.36397023426620234;
 
             // invocar al método
-            elResultadoActual = elMetodo.Tangente(0.52359877559);
+            elResultadoActual = elMetodo.Tangente(20.0);
 
             // verificar el resultado
+            //double diferencia = elResultadoActual - elResultadoEsperado;
+            //Assert.IsTrue(Math.Abs(diferencia) < 0.01);
             Assert.AreEqual(elResultadoActual, elResultadoEsperado);
         }
 
@@ -142,10 +144,10 @@ namespace Metodos.UT
         {
             // preparar el escenario
             elResultadoActual = 0.0;
-            elResultadoEsperado = 1.000000000;
+            elResultadoEsperado = 1.19175359259421;
 
             // invocar al método
-            elResultadoActual = elMetodo.Tangente(0.78539816339);
+            elResultadoActual = elMetodo.Tangente(50.0);
 
             // verificar el resultado
             Assert.AreEqual(elResultadoActual, elResultadoEsperado);
